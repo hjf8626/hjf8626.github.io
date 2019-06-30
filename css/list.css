@@ -1,0 +1,117 @@
+/*列表页的css*/
+.sk {
+	position: absolute;
+	top: 40px;
+	left: 185px;
+	height: 32px;
+	border-left: 1px solid #b1191a;
+	padding: 5px 0 0 15px;
+}
+.sk_list li {
+	float: left;
+	line-height: 45px;
+	margin: 0 30px;
+}
+.sk_list li a {
+	font-size: 16px;
+	color: #000;
+	font-weight: 700;
+}
+.sk_list li a:hover {
+	color: #c81523;
+}
+.sk_con li {
+	float: left;
+	line-height: 45px;
+	margin: 0 20px;
+}
+.sk_con li a {
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'icomoon';
+}
+.sk_bd {
+	/*02 疑问？为什么此处给了父元素*相对定位*还是无法正常显示子元素*/
+	/*position: relative;*/
+	margin-top: 25px;
+}
+.sk_bd {
+	width: 1212px;
+	/*01：疑问？为什么此处给父元素添加清除浮动无效果*/
+	/*overflow: hidden;*/
+}
+.sk_goods {	
+	position: relative;
+	float: left;
+	width: 288px;
+	height: 458px;
+	border: 1px solid transparent;
+	/*transparent透明色*/
+	margin: 0 12px 15px 0;
+	transition: all .3s linear;
+}
+.sk_goods:hover  {
+	border: 1px solid red;
+	/*border-top: 1px solid red;
+	border-left: 1px solid red;*/
+	margin-top: 1px;
+	/*03 疑问？为什么给了1px像素top移动不止1px高度？*/
+}
+.sk_bd li {
+	/*父元素 大盒子 li 给相对定位的“立即抢购”相照应*/
+	position: relative;
+	margin-top: 12px;
+}
+.sk_goods_title {
+	font-size: 12px;
+	color: #666;
+	font-weight:400;
+	padding: 10px  10px 15px;
+}
+.sk_goods_price {
+	padding-left: 10px;
+}
+.sk_goods_price em {
+	font-size: 16px;
+	color: #e12228;
+	font-weight: 700;
+}
+.sk_goods_price del {
+	font-size: 12px;
+	padding-left: 5px;
+	font-weight: 700;
+}
+.sk_goods_progress {
+	padding: 0 10px;
+}
+.bar {
+	display: inline-block;
+	width: 130px;
+	height: 10px;
+	border: 1px solid #b1191a;
+	vertical-align: middle;	
+	margin: 0 5px;
+	border-radius: 5px;
+}
+.bar_in {
+	height: 10px;
+	background-color: #b1191a;
+	width: 87%;
+}
+.sk_goods_progress em,i {
+	color: #b1191a;
+}
+.sk_goods_buy {
+	/*立即抢购：子元素给了绝对定位*/
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/*display: block;*/
+	font-size: 20px;
+	height: 50px;
+	background-color: #b1191a;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 15px;
+}

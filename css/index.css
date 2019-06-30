@@ -1,0 +1,269 @@
+/*这个文件里放首页样式*/
+.main {
+	width: 980px;
+	height: 455px;
+	/*background-color: #ccc;*/
+	margin-left: 219px;
+	margin-top: 10px;
+}
+.focus {
+	position: relative;
+	float: left;
+	width: 720px;
+	height: 455px;
+	background-color: blue;
+}
+.arrow-r,
+.arrow-l {
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	width: 24px;
+	height: 40px;
+	background: rgba(0, 0, 0, .3);
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-family: simsun;
+}
+.arrow-r {
+	right: 0;
+}
+.circle {
+	position: absolute;
+	bottom: 10px;
+	left: 50px;
+}
+.circle li {
+	float: left;
+	width: 8px;
+	height: 8px;
+	border:1px solid rgba(0, 0, 0, 0.3);
+	/*background-color: #fff;*/
+	margin:0 3px ;
+	border-radius: 50%;
+	/*鼠标经过光标小手*/
+	cursor:pointer; 
+}
+.current {
+	background-color: #fff;
+}
+.newsflash {
+	float: right;
+	width: 250px;
+	height: 455px;
+	/*background-color: pink;*/
+}
+.news {
+	height: 163px;
+	border: 1px solid #ccc;
+	/*background-color: red;*/
+	border-bottom: none;
+}
+.news-hd {
+	height: 33px;
+	border-bottom: 1px dotted red;
+	padding: 0 15px;
+	font-size: 14px;
+	line-height: 33px;
+	/*font-family: 'icomoon';*/
+}
+.news-hd h3{
+	/*出错，报错位置*/
+	/*display: left;*/
+	float: left;
+	font-size: 14px;
+}
+.news-hd a {
+	float: right;
+	font-size: 14px;
+	font-family: 'icomoon';
+}
+
+.news-bd {
+	padding: 10px 0 0 15px;
+	border-bottom: 1px solid #ccc;
+}
+.news-bd  li {
+	height: 24px;
+}
+.lifeservice ul {
+	width: 252px;
+}
+.lifeservice {
+	height: 208px;
+	overflow: hidden;
+	border:1px solid #ccc;
+	border-top: none;
+}
+.lifeservice li {
+	position: relative;
+	float: left;
+	width: 62px;
+	height: 70px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.lifeservice li a {
+	display: block;
+	height: 100%;
+	/*解决 i 外边距合并塌陷的问题*/
+	overflow: hidden;
+}
+.service_ico {
+	/*"i"行内元素转换成块级元素*/
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(../img/icons.png) no-repeat ;
+	margin: 10px auto;
+}
+.lifeservice li p {
+	text-align: center;
+}
+.hot {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 12px;
+	height: 15px;
+	background: url(../img/jian.jpg) no-repeat ;
+}
+.service_ico_huafei {
+	background-position: -17px -16px ;
+}
+.service_ico_feiji {
+	background-position: -78px -16px;
+}
+.bargin {
+	height: 75px;
+	margin-top: 5px;
+}
+/*推荐模块*/
+.recommend {
+	height: 163px;
+	background-color: blue;
+	margin-top: 10px;
+}
+.recom-hd {
+	float: left;
+	width: 200px;
+	height: 163px;
+	background-color: #5c5251;
+	text-align: center;
+}
+.recom-hd img {
+	margin: 30px 0 10px 0;
+}
+.recom-hd h3 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+}
+.recom-bd {
+	float: left;
+	width: 1000px;
+	height: 163px;
+	background-color: #ebebeb;
+}
+.recom-bd li {
+	overflow: hidden;
+	float: left;
+	width: 249px;
+	border-right: 1px solid #ccc;
+	height: 145px;
+	/*background-color: yellow;*/
+	margin-top: 10px;
+}
+.recom-bd .last {
+	border-right: none;
+}
+/*楼层区开始*/
+.box-hd {
+	height: 30px;
+	border-bottom: 2px solid red;
+	margin-top: 20px;
+}
+.box-hd h3 {
+	float: left;
+	font-size: 18px;
+	color: #c81623;
+}
+
+.tab-list {
+	line-height: 30px;
+}
+.tab-list li {
+	float: left;
+}
+.tab-list li a {
+	margin: 0 10px 0 10px;
+}
+.box-bd {
+	height: 361px;
+}
+
+.w209 {
+	width: 209px;
+	background-color: #f9f9f9;
+}
+.w329 {
+	width: 329px;
+}
+.w219 {
+	width: 219px;
+	border-right: 1px solid #ccc;
+}
+.w220 {
+	width: 220px;
+	border-right: 1px solid #ccc;
+}
+.tab-con li {
+	float: left;
+	height: 361px;
+}
+.tab-con-item {
+	border-bottom: 1px solid #ccc;
+}
+.tab-con-list {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.tab-con-list li {
+	width: 86px;
+	height: 32px;
+	/*行高等于高度垂直居中*/
+	line-height: 32px;
+	margin-left: 14px;
+	border-bottom: 1px solid #ccc;
+	/*水平居中*/
+	text-align: center;
+}
+.box-bd img {
+	
+}
+/*鼠标经过图片的过渡效果*/
+.box-bd img:hover {
+	padding-top: 3px;
+}
+/*电梯导航*/
+.fixedtool {
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	margin-left: -676px;
+	width: 66px;
+}
+.fixedtool li {
+	height: 32px;
+	line-height: 32px;
+	font-size: 12px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	background-color: #fff;
+}
+.fixedtool .current {
+	background-color: #c81623;
+	color: #fff;
+}	
